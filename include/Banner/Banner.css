@@ -1,0 +1,54 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  line-height: 1.6;
+  font-family: tahoma,arial,helvetica,"bitstream vera sans",sans-serif;
+  background-color: #ffffff;
+        color: white; 
+text-decoration:none; 
+}
+
+ul {
+  float: right;
+  margin-top: 16px;
+  margin-right: 16px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 0px;
+  list-style: none;
+}
+li {
+  float: left;
+  margin-left: 3px;
+}
+
+#onglet {
+  overflow: hidden;
+  background-color: #F5CAC3;
+}
+
+.panier {
+       background-image: ('img/Panier.png');
+    background-repeat: no-repeat;
+    background-position: 50% 10px;
+}
+
+
+#onglet ul li a {
+  float: left;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  background-color: #F6BD60;
+
+}
+#onglet ul li a span {
+  float: left;
+  padding-right: 10px;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  padding-left: 0px;
+  background-color: #F6BD60;
+}
+

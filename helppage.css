@@ -1,0 +1,15 @@
+body {
+  color: black;
+background-color: #F7EDE2;
+}
+#help_form {
+    text-align: center;
+ width: 550px;
+ height: 450px;
+ margin: auto;
+position: relative;
+} 
+
+h2 {
+    text-align: center;
+}

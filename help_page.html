@@ -1,23 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="helppage.css">
+ <link rel="stylesheet" href="help_page.css">
     <meta charset="UTF-8">
     <title>Help page</title>
 </head>
-<body>
 
-    <h2>Help form</h2>
+<body>  
 
-<form id="help_form" action="/action_page.php">
-  <label for="fname">name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Email:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br>
-  <label for="lname">Describe your issue:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+	<div class="contact_form">
 
+		<div class="formulario">			
+      <h1>Help form</h1>
+				<h3>Send us your message and we will respond shortly.</h3>
+
+
+					<form action="submeter-formulario.php" method="post">				
+
+						
+								<p>
+									<label for="name" class="colocar_name">Full name
+										<span class="obrigatorio">*</span>
+									</label>
+										<input type="text" name="introduzir_name" id="name" required="obrigatorio" placeholder="Enter your name...">
+								</p>
+							
+								<p>
+									<label for="email" class="colocar_email">Email
+										<span class="obrigatorio">*</span>
+									</label>
+										<input type="email" name="introduzir_email" id="email" required="obrigatorio" placeholder="Enter you mail...">
+								</p>
+						
+								<p>
+									<label for="telephone" class="colocar_telephone">Telephone
+									</label>
+										<input type="tel" name="introduzir_telephone" id="telephone" placeholder="Enter your phone number...">
+								</p>		
+							
+							
+								<p>
+									<label for="assunto" class="colocar_asunto">Subject
+										<span class="obrigatorio">*</span>
+									</label>
+										<input type="text" name="introduzir_subject" id="subject" required="obrigatorio" placeholder="What is your Subject...">
+								</p>		
+							
+								<p>
+									<label for="message" class="colocar_message">Message
+										<span class="obrigatorio">*</span>
+									</label>                     
+                               		  <textarea name="Massage Example" class="texto_message" id="message" required="required" placeholder="Write down your meassage here..."></textarea> 
+                               	</p>	  								
+							
+								<button type="submit" name="send_formulario" id="send"><p>Send</p></button>
+
+								<p class="aviso">
+								Thank you for your message.
+								</p>					
+						
+					</form>
+		</div>	
+	</div>
 </body>
+	
 </html>

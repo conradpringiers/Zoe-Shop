@@ -2,18 +2,10 @@
     $user = 'root';
     $pass = 'root';
         $connection = new PDO('mysql:host=localhost;port=3308;dbname=zoe', $user, $pass);
-        $query = "SELECT * FROM client";
-    $result = $connection->query($query);
-    while($data=$result->fetch(PDO::FETCH_ASSOC)){
-        echo " client id: ";
-        echo $data['client_id'];
-        echo " mail ";
-        echo $data['mail'];
-        echo $data['address'];
-        echo $data['postalcode'];
-        echo $data['town'];
-        echo $data['name'];
-        echo $data['firstname'];
-    }
+        $query = "INSERT INTO `client` (`client_id`, `mail`, `address`, `postalcode`, `town`, `name`, `firstname`) VALUES ( 'hf', 't', '8975', 'ghguy', 'fh', 'hsr')";
+        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    
+    $conn->exec($sql)
+
 
     ?>

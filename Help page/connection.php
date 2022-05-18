@@ -1,6 +1,6 @@
-<?php
+    <?php
     $user = 'root';
-    $pass = '';
+    $pass = 'root';
     $options = array(
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_EMULATE_PREPARES => false
@@ -12,7 +12,7 @@
     $email = $_REQUEST['email'];
     
     try {
-        $connection = new PDO('mysql:host=localhost;dbname=zoe', $user, $pass, $options);
+        $connection = new PDO('mysql:host=localhost;dbname=zoe;port=8889', $user, $pass, $options);
         $query = "INSERT INTO `client` (`mail`, `address`, `postalcode`, `town`, `name`, `firstname`) VALUES (:mail, :address, :postalcode, :town, :name, :firstname)";
         $statement = $connection->prepare($query);
         $statement->bindValue(':mail', $email);
